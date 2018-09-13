@@ -30,9 +30,12 @@ Only `numpy` is required.
 
 ### Download the original MNIST dataset
 
-Download from the [official MNIST website](http://yann.lecun.com/exdb/mnist/)
-and unzip in the `data/` folder:
-
+Running
+``` shell
+./download.sh
+```
+will download the original MNIST dataset from [official MNIST website](http://yann.lecun.com/exdb/mnist/)
+and unzip the files in the `data/` folder:
 ``` shell
 data/train-images.idx3-ubyte
 data/train-labels.idx1-ubyte
