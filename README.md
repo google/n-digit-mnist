@@ -59,6 +59,14 @@ python n_digit_mnist.py --num_digits 3 --domain_gap instance --use_standard_data
 python n_digit_mnist.py --num_digits 3 --domain_gap number --use_standard_dataset
 ```
 
+To optionally check samples from the dataset, run our example script (requires `pillow` package)
+
+``` shell
+python example_visualization.py
+```
+
+which extracts a few samples in the visualization subfolder (e.g. `data/dataset_mnist_2_number/visualization`). 
+
 ### Create your own dataset
 
 See `n_digit_mnist.py` argument options and configure a new dataset yourself.
