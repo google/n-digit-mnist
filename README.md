@@ -68,6 +68,19 @@ Example of 4-digit MNIST with `number` domain gap:
 python n_digit_mnist.py --num_digits 4 --domain_gap number
 ```
 
+## Citing the dataset
+
+The dataset is introduced in the following publication. Use the following bibtex for citing the dataset:
+
+```
+@inproceedings{joon2019iclr,
+  title = {Modeling Uncertainty with Hedged Instance Embedding},
+  author = {Oh, Seong Joon and Murphy, Kevin and Pan, Jiyan and Roth, Joseph and Schroff, Florian and Gallagher, Andrew},
+  year = {2018},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+}
+```
+
 ## License
 
 This project is licensed under the Apache License - see the [LICENSE](LICENSE) file for details.
