@@ -42,7 +42,7 @@ def main():
   parser.add_argument('--output_dir', default='data', type=str,
                       help='Directory to write the dataset.')
 
-  parser.add_argument('--mnist_split', default='data', type=str,
+  parser.add_argument('--mnist_split', default='train', type=str,
                       help='Which MNIST split was used to generate data?'
                            '(train or test)')
 
