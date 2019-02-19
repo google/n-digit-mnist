@@ -59,6 +59,15 @@ python n_digit_mnist.py --num_digits 3 --domain_gap instance --use_standard_data
 python n_digit_mnist.py --num_digits 3 --domain_gap number --use_standard_dataset
 ```
 
+To optionally check samples from the dataset, run the following command (requires `pillow` package):
+
+``` shell
+python example_visualization.py --num_digits 2 --domain_gap instance --num_visualize 10 --mnist_split train
+python example_visualization.py --num_digits 2 --domain_gap instance --num_visualize 10 --mnist_split test
+```
+
+They extract 20 random samples of the 2-digit instance-gap dataset, 10 from train and 10 from test split, in the visualization subfolder (e.g. `data/dataset_mnist_2_instance/visualization`). 
+
 ### Create your own dataset
 
 See `n_digit_mnist.py` argument options and configure a new dataset yourself.
