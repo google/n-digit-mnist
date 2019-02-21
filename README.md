@@ -26,7 +26,7 @@ In both training and test splits, each n-digit class has exactly the same number
 
 ### Dependencies
 
-Only `numpy` is required.
+Tested on Python version `2.7`. Only `numpy` is required.
 
 ### Download the original MNIST dataset
 
