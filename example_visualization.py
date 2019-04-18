@@ -19,7 +19,7 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-
+import argparse
 import numpy as np
 from PIL import Image
 
@@ -53,13 +53,13 @@ def main():
                              'dataset_mnist_%d_%s' % (args.num_digits,
                                                       args.domain_gap))
 
-  path = os.path.join(args.dataset_dir, '%s.npz' % args.mnist_split)
+  path = os.path.join(dataset_dir, '%s.npz' % args.mnist_split)
   with open(path, 'r') as f:
     data = np.load(path)
     labels = data['labels']
     images = data['images']
 
-  visualize_dir = os.path.join(args.dataset_dir, 'visualization')
+  visualize_dir = os.path.join(dataset_dir, 'visualization')
   if not os.path.exists(visualize_dir):
     os.makedirs(visualize_dir)
 
@@ -68,7 +68,7 @@ def main():
   
   for i in visualize_indices:
     im = Image.fromarray(images[i])
-    im.save(os.path.join(args.visualize_dir,
+    im.save(os.path.join(visualize_dir,
                          'sample_image_%d_label_%d.jpg' % (i, labels[i])))
 
 if __name__ == '__main__':
